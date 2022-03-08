@@ -1,0 +1,44 @@
+.menu {
+  background-color: $backgraund-grey-dark;
+  border-radius: 0;
+
+  .ui.grid {
+    margin: 0;
+  }
+
+  &_left,
+  &_right {
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center;
+
+    .ui.menu {
+      border: 0;
+      box-shadow: none;
+      height: 100%;
+      background: transparent;
+
+      .icon {
+        margin-left: 10px !important;
+        color: $primary;
+      }
+      .item {
+        color: $font-light;
+        border-radius: 0 !important;
+
+        &:hover {
+          color: $font-light;
+          background-color: $backgraund-dark-absolute;
+        }
+        &.m-0 i {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+
+  &_right {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
